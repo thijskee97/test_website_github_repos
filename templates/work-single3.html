@@ -1,0 +1,51 @@
+<head>
+{% include "header.html" %}
+
+</head>
+ <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block  mr-auto">
+
+          </div>
+        </div>
+        <div class="col-md-4 d-none d-md-block">
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">Muurschilderijen.</a>
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="../static/css/style.css" rel="stylesheet">
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+    <div class="container">
+  <div class="row">
+      {% for num in range(1,45) %}
+    <div class="col">
+      <img class="images_thijs3" src="../static/img/afbeeldingen mamas website/muur/{{num}}.jpeg">
+    </div>
+     {% endfor %}
+  </div>
+</div>
+
+{% include "footer.html" %}
